@@ -23,4 +23,4 @@
     - name: deploy site
       git:
         repo: git@github.com:obongg/food3.git
-        dest: /www/var/html
+        dest: /var/www/html
