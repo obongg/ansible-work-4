@@ -22,5 +22,10 @@
 
     - name: deploy site
       git:
+<<<<<<< HEAD
         repo: git@github.com:obongg/food3.git
         dest: /var/www/html
+=======
+        repo: https://github.com/obongg/food3.git
+        dest: /www/var/html
+>>>>>>> 7569d0befafa29d5a3467bdf6522d40d7050a89e
