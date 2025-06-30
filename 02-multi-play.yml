@@ -27,16 +27,16 @@
         path: /home/ec2-user/walk_dir2
         state: directory
 
-- name: update g2 servers
-  hosts: g2
+- name: update u5 servers
+  hosts: u5
 
   tasks:
     - name: create directory
       file:
-        path: /home/ec2-user/walk_dir1
+        path: /home/ubuntu/walk1 
         state: directory
 
     - name: create directory
       file:
-        path: /home/ubuntu/confirm_dir
+        path: /home/ubuntu/con_dir
         state: directory
