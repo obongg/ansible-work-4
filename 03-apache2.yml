@@ -14,3 +14,13 @@
         name: apache2
         state: started
         enabled: yes
+
+    - name: Install git
+      apt:
+        name: git
+        state: present
+
+    - name: deploy site
+      git:
+        repo: git@github.com:obongg/food3.git
+        dest: /www/var/html
