@@ -1,0 +1,16 @@
+---
+- name: Deploy web app
+  hosts: n3
+  become: yes
+
+  tasks:
+    - name: Install git
+      yum:
+        name: httpd
+        state: present
+
+    - name: pull code
+      git:
+        repo: https://github.com/obongg/ecomm-3.git
+        dest: /var/www/html
+        enabled: yes
