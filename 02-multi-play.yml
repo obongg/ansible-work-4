@@ -35,5 +35,11 @@
   tasks:
     - name: Create a directory
       file:
-        path: /home/ec2-user/new_dir_group22
+        path: /home/ec2-user/new_dir_group
+        state: directory
+
+   tasks:
+    - name: Create a directory
+      file:
+        path: /home/ubuntu/new_dir_group_
         state: directory
