@@ -1,0 +1,10 @@
+---
+- name: under maintenance
+  host: n3
+  become: yes
+
+  tasks:
+    - name: secure copy
+      copy:
+        src: maintenance.html
+        dest: /var/www/html/index.html
