@@ -6,7 +6,7 @@
   tasks:
     - name: Install git
       yum:
-        name: httpd
+        name: git
         state: present
 
     - name: pull code
