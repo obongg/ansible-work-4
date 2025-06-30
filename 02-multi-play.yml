@@ -8,11 +8,11 @@
         path: /home/ec2-user/new_dir1
         state: directory
 
-  tasks:
     - name: Create a directory
       file:
         path: /home/ec2-user/new_dir2
         state: directory
+
 ---
 - name: Update n2 servers
   hosts: n2
@@ -22,7 +22,7 @@
       file:
         path: /home/ec2-user/new_dir1
         state: directory
-  tasks:
+
     - name: Create a directory
       file:
         path: /home/ec2-user/new_dir2
@@ -38,7 +38,6 @@
         path: /home/ec2-user/new_dir_group
         state: directory
 
-  tasks:
     - name: Create a directory
       file:
         path: /home/ubuntu/new_dir_group_
