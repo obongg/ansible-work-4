@@ -1,8 +1,8 @@
 ---
-- name: Deploy web app
+- name: Deploy php app
   hosts: n4
   become: yes
 
   roles:
     - apache
-    - html
+    - php
