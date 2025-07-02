@@ -12,5 +12,5 @@
 - name: Pull e-commerce app from GitHub
   git:
     repo: https://github.com/obongg/ecomm-3.git
-    dest: /var/www/html
+    dest: /var/www/html/ecomm.html
     force: yes
