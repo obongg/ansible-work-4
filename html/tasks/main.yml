@@ -1,6 +1,6 @@
 ---
 # tasks file for html
----
+
 - name: Install git
   yum:
     name: git
